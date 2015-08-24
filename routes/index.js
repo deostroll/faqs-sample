@@ -3,8 +3,10 @@ var router = express.Router();
 var path = require('path');
 /* GET home page. */
 var fs = require('fs');
-var cache = JSON.parse(fs.readFileSync('/home/deostroll/code/nodejs/mongo/mined.json', 'utf-8'));
-var faqs = JSON.parse(fs.readFileSync('/home/deostroll/Documents/faqs.json', 'utf-8'));
+var cache = JSON.parse(fs.readFileSync('data/mined.json', 'utf-8'));
+var faqs = JSON.parse(fs.readFileSync('data/faqs.json', 'utf-8'));
+var app = express();
+
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'FAQ Express' });
