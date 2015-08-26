@@ -22,8 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 mime.define({'text/cache-manifest': ['manifest']})
-console.log(__dirname);
+
 app.use('/', routes);
 app.use('/users', users);
 

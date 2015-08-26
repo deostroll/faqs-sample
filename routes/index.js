@@ -6,18 +6,31 @@ var fs = require('fs');
 var cache = JSON.parse(fs.readFileSync('data/indexed.json', 'utf-8'));
 var faqs = JSON.parse(fs.readFileSync('data/faqs.json', 'utf-8'));
 var keywords = Object.keys(cache);
+var version = fs.readFileSync('data/version.txt', 'utf-8');
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'FAQ Express' });
+  res.render('index', { title: 'MCS FAQ Express' });
 });
 
-router.get('/faqs', function(req, res){
-	res.sendFile('/home/deostroll/Documents/faqs.json');
+router.get('/faqs', function(req, res) {	
+	if(req.query.id) {
+		res.end(JSON.stringify(faqs[req.query.id]));
+	}		
+});
+
+router.get('/gist', function(req, res) {
+	//console.log(typeof faqs);
+	var gist = {
+		version: version,
+		faqs: faqs,
+		index: cache
+	};
+	res.end(JSON.stringify(gist));
 });
 
 router.post('/search', function(req, res) {
 	//console.log(req.body.words);
-	var list = [];
+	var list = '';
 	req.body.words.forEach(function(w) {
 		var matches = keywords.filter(function(kw){
 			return kw.indexOf(w) > -1;
@@ -38,13 +51,12 @@ router.post('/search', function(req, res) {
 		}
 
 		var items = idx.map(function(i){
-			return faqs[i];
+			return { idx: i, faq: faqs[i] };
 		});
-
-		list.push(items);
+		list = JSON.stringify(items);
 	});
 
-	res.end(JSON.stringify(list));
+	res.end(list);
 });
 
 module.exports = router;

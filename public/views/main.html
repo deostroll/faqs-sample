@@ -1,5 +1,7 @@
 
 <h1 style="text-align:center">MCS FAQs Express</h1>
+<br/>
+<br/>
 <div style="text-align:center;width: 100%">
 	<div style="display:inline-block; width:65%">
 		<div class="input-group">
@@ -11,6 +13,12 @@
 	</div>
 	<p><small class="text-muted">Press enter to search</small></p>
 </div>
-
-
-
+<div>
+	<ul class="list-group">
+		<li ng-repeat="entry in results" class="list-group-item">
+			<a href="#/show/{{entry.idx}}">{{entry.faq.question}}</a>
+			<br/>
+			<p class="text-muted"><small>{{entry.faq.cat}} &raquo; {{entry.faq.subcat}}</small></p>
+		</li>
+	</ul>
+</div>

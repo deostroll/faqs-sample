@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#v1.0
+#v1.5
 CACHE:
 /
 js/jquery.min.js
@@ -9,3 +9,13 @@ css/bootstrap-theme.min.css
 js/angular.min.js
 js/angular-route.min.js
 js/client.js
+views/main.html
+views/noconnect.html
+views/nosupport.html
+views/show.html
+favicon.ico
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.woff2
