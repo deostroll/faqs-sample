@@ -3,19 +3,12 @@ var router = express.Router();
 var path = require('path');
 /* GET home page. */
 var fs = require('fs');
-var cache = JSON.parse(fs.readFileSync('data/mined.json', 'utf-8'));
+var cache = JSON.parse(fs.readFileSync('data/indexed.json', 'utf-8'));
 var faqs = JSON.parse(fs.readFileSync('data/faqs.json', 'utf-8'));
-var app = express();
-
+var keywords = Object.keys(cache);
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'FAQ Express' });
-});
-
-router.get('/appcache', function(req, res){
-	res.set('Content-Type', 'text/cache-manifest');
-	res.sendFile('./manifest.appcache', {root: path.resolve(__dirname + '/../')});
-
 });
 
 router.get('/faqs', function(req, res){
@@ -24,24 +17,34 @@ router.get('/faqs', function(req, res){
 
 router.post('/search', function(req, res) {
 	//console.log(req.body.words);
-	var indexes = {};
+	var list = [];
 	req.body.words.forEach(function(w) {
-		var a = cache[w];
-		if(a) {
-			for(var i =0; i < a.length; i++) {
-				if(!indexes[a[i]]) {
-					indexes[a[i]] = true;
-				}
-			}
-		}
-
-		var hits = Object.keys(indexes).map(function(idx){
-			return faq[idx];
+		var matches = keywords.filter(function(kw){
+			return kw.indexOf(w) > -1;
+		});
+		var results = {};
+		matches.forEach(function(match){
+			results[match] = cache[match];
 		});
 
-		res.send(hits);
+		var idx = [];
+		for(var x in results) {
+			var a = results[x];
+			a.forEach(function(b) {
+				if(idx.indexOf(b) === -1) {
+					idx.push(b);
+				}
+			})
+		}
+
+		var items = idx.map(function(i){
+			return faqs[i];
+		});
+
+		list.push(items);
 	});
 
-	res.end();
+	res.end(JSON.stringify(list));
 });
+
 module.exports = router;

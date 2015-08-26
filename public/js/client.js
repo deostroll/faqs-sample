@@ -37,19 +37,30 @@ angular.module('clientApp', ['ngRoute'])
 			$location.path('/search');
 		}
 	})
-	.controller('MainCtrl', function($scope, $http, $q){
-		var canceler;
-		$scope.$watch('srcText', function(n) {
-			
+	.controller('MainCtrl', function($scope, $http, $q, $document){
+		
+		function hook() {
+			var d = $document[0];
+			var inp = d.getElementsByTagName('input')[0];
+			angular.element(inp).bind('keyup', function($evt){
+				//console.log($evt.keyCode);
+				if($evt.keyCode === 13) {
+					search();
+				}
+			});
+		}
 
-			if(canceler && canceler.resolve) {
-				canceler.resolve();
-			}
-			if(n.length === 0) return;
-			canceler = $q.defer();
-			$http.post('search', {words: ['tax', 'refunds']})
-				.then(function(data) {
-					console.log(data);
-				});
-		});
+		function search() {
+			var text = $scope.srcText;
+			var dto = { words: text.split(' ') };
+			$http.post('search', dto)
+			.success(function(sr){
+				console.log(sr);
+			})
+			.error(function(err){
+				console.log('Error:', err);
+			})
+		}
+
+		$scope.$on('$routeChangeSuccess', hook);
 	});

@@ -1,13 +1,603 @@
 [
-{"question":"How do I notify the IRS my address has changed?","answer":"If you filed a joint return, you should provide the same information and signatures for both spouses.\nIf you filed a joint return and you and/or your spouse have since separated, you both should notify us of your new addresses.\nRepresentatives filing a change of address for a taxpayer by form or written statement must attach a copy of their power of attorney or a Form 2848 (.pdf), Power of Attorney and Declaration of Representative. Unauthorized third parties cannot change a taxpayer's address.\nAny new address you provide to the U.S. Postal Service (USPS) may also update your address of record on file with us based on what the USPS retains in its National Change of Address (NCOA) database. However, even if you notify the USPS, you should still notify us directly as not all post offices forward government checks.\nIf the change of address relates to an employment tax return, the IRS will issue notices of confirmation (Notices 148 A and 148 B) for the change to both the former and new address.","priority":"1"}
+{"sno":"1","question":"From which system RTBR figures come up?","answer":"RTBR figures comes up from PBS .","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
 ,
-{"question":"Is there an age limit on claiming my child as a dependent?","answer":"To claim your child as your dependent, your child must meet the qualifying child test or the qualifying relative test.\nTo meet the qualifying child test, your child must be younger than you and as of the end of the calendar year, either be younger than 19 years old or be a student and younger than 24 years old. \nThere is no age limit on claiming your child as a dependent if the child meets the qualifying relative test.\nAs long as you meet all of the following tests, you may claim a dependency exemption for your child:\nQualifying child or qualifying relative test\nDependent taxpayer test\nCitizen or resident test, and\nJoint return test","priority":"1"}
+{"sno":"2","question":"Does Subcon also needs to be added in PBS for RTBR Projection?","answer":"Yes, without adding the same RTBR will not show up Subcon revenue.","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
 ,
-{"question":"If I claim my daughter who is a full-time college student as a dependent, can she claim her own personal exemption when she files her return?","answer":"f you can claim an exemption for your daughter as a dependent on your income tax return, she cannot claim her own personal exemption on her income tax return. Your daughter should check the box on her return indicating that someone else can claim her as a dependent.","priority":"1"}
+{"sno":"3","question":"For an FP code if child code is getting closed before the master code, how will be the revenue recognized?","answer":"The child code should get all it's remaining revenue share in the next subsequent month.","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
 ,
-{"question":"Can I receive a tax refund if I am currently making payments under an installment agreement or payment plan for a prior year's federal taxes?","answer":"No. A condition of your installment agreement is that the IRS will automatically apply any refund due to you against taxes you owe.\nBecause your refund is not applied toward your regular monthly payment, you must continue making your installment agreement payments as scheduled and in full.\nRegardless whether you are participating in an installment agreement or other payment arrangement with the IRS, you may not get all of your refund if you owe certain past-due amounts, such as federal tax, state tax, a student loan, or child support. For more information on these non-IRS refund offsets, you can call the Bureau of the Fiscal Service (BFS) at 800-304-3107 (toll-free).","priority":"1"}
+{"sno":"4","question":"Why an FP child codesometimes recognises less revenue then the actual?","answer":"There might be a drop down of efforts in the group mater code level or the revenue share % is not accurate.","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
 ,
-{"question":"What is a split refund?","answer":"A split refund lets you divide your refund, in any proportion you want, and direct deposit the funds into up to three different accounts with U.S. financial institutions. Use Form 8888 (.pdf), Allocation of Refund, to request to have your refund split.","priority":"2"}
+{"sno":"5","question":"Why sometimes project codes show up negative revenue?","answer":"This happens if in the previous month excess revenue get recognized\r\nIf a negative CR get implemented\r\nIf there is a change in project code\r\nIf there is a sudden reduction is the % of revenu share split\r\nIf there is a sudden drop down in efforts\r\n","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
 ,
-{"question":"How do I know if I have to file quarterly individual estimated tax payments?","answer":"You must make estimated tax payments for the current tax year if both of the following apply:\nYou expect to owe at least $1,000 in tax for the current tax year after subtracting your withholding and refundable credits.\nYou expect your withholding and refundable credits to be less than the smaller of:\n90% of the tax to be shown on your current year’s tax return, or\n100% of the tax shown on your prior year’s tax return. (Your prior year tax return must cover all 12 months.)\nThere are special rules for:\nFarmers and fishermen\nCertain household employers\nCertain higher income taxpayers\nNonresident aliens\n","priority":"3"}
+{"sno":"6","question":"Does the RTBR  figures tend to be same in finpulse?","answer":"No, As Finpulse is based on actuals whereas RTBR is the projection only.","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
+,
+{"sno":"7","question":"If efforts for a specific month are futured will the revenue get recognize in finpulse?","answer":"No","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
+,
+{"sno":"8","question":"If milestones  for a specific month are futured will the revenue get recognize in finpulse?","answer":"No","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
+,
+{"sno":"9","question":"If revenue share in PBS is correctly submitted under each Participating PU but all are not is approved status, will the revenue get recognized?","answer":"No, all revenue share split needs to be in approved ststus in PBS.","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
+,
+{"sno":"10","question":"If for a particular PU , revenue share is 0 %. Does it also needs to be approved?","answer":"Yes, other wise none of the PU will get their revenues.","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
+,
+{"sno":"11","question":"When does RTBR for a project shows up?","answer":"Once the efforts are entered in PBS .","cat":"Revenue Recognition","subcat":"Revenue Recognition","provider":"Bhaskar"}
+,
+{"sno":"12","question":"From where the  roles can be added in PBS in T&M Project?","answer":"From Master data in PBS","cat":"PBS","subcat":"Master Data","provider":"Bhaskar"}
+,
+{"sno":"13","question":"Under which measuring unit does the efforts are entered in PBS for T&M Project?","answer":"Person Month ","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"14","question":"Can the role rate combination in PBS be changed?","answer":"Yes, Once the same is updated in OMS.","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"15","question":"Can PBS be updated at any point of time during the project tenure?","answer":"Yes, The Pm needs to initiate a munual budget version in PBS .","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"16","question":"Can revenue share be changed/ updated in PBS at any point of time during the Project tenure?","answer":"Yes, the PM needs to recall the previous revenue share split and resubmit the updated ones to all the DMs.","cat":"PBS","subcat":"Revenue Share","provider":"Bhaskar"}
+,
+{"sno":"17","question":"If correct efforts are not entered in PBS for all resources , will the RTBR reflect correctly?","answer":"No, RTBR will show correct figure only when all the efforts are correctly reflected in PBS person efforts.","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"18","question":"Fot FP code who is responsible for entering the PBS efforts for child code as well?","answer":"Master Cose PM.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"19","question":"In FP projects , does revenue share for all PU's needs to be submitted even if it is zero.","answer":"Yes , it must be submitted and approved by all DMs in system.","cat":"PBS","subcat":"Revenue Share","provider":"Bhaskar"}
+,
+{"sno":"20","question":"when does Project Margins shows negative in PBS where as it was positive in DPS?","answer":"If the efforts are not entered correctly\r\nIf there is a negative CR inplemented\r\nIf incorrect rates are added in OMS for T&M codes\r\n","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"21","question":"Why does an STP or SEZ project sometimes shows negartive margins ?","answer":"If the project was created separetely for a particular resource being STP/SEZ, it might show negative but in group master level if the margin is positive ,then its fine.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"22","question":"In which System DM certification needs to be done?","answer":"In PBS ","cat":"PBS","subcat":"DM Certification","provider":"Bhaskar"}
+,
+{"sno":"23","question":"When DM certifications needs to be done in PBS ?","answer":"Every Quarter","cat":"PBS","subcat":"DM Certification","provider":"Bhaskar"}
+,
+{"sno":"24","question":"Why sometimes automatic PBS version gets created?","answer":"Due to Positive/Negative CR and Change is project scope.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"25","question":"Why is there a PBS Alcon mismatch?","answer":"If efforts allocated in Alcon and Budget in PBS is not the same","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"26","question":"Does the efforts entered in PBS needs to be the same as the efforts entered in DPS as per the staffing sheet ?","answer":"Yes, Also the same should be there in Alcon as well.","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"27","question":"If there is a PBS Alcon mismatch, does matching the same in PBS is the correct approcah of fixing the same?","answer":"No, if mismatch is not due to holidays or leaves it is not the correct approach. The efforts should be checked and validated with the staffing sheet.","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"28","question":"If a resources is added as an investment in a project what does it impact in PBS?","answer":"Project Margin","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"29","question":"If an offshore role is added incorrectly in PBS as Onsite, what does it impact ?","answer":"Project Margin, RTBR and total offshore and onsite person efforts.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"30","question":"If revenie share is not at all updated in PBS for a new FP code where will the 100% revenue go as per the 1st PBS version.","answer":"100% revenue goes to master code.","cat":"PBS","subcat":"Revenue share","provider":"Bhaskar"}
+,
+{"sno":"31","question":"When will the participating PU will show up in PBS for an FP master code.","answer":"Only when the child code is created and saved in OMS.","cat":"PBS","subcat":"Revenue share","provider":"Bhaskar"}
+,
+{"sno":"32","question":"Where do we get expenses infirmation in PBS?","answer":"Under Others cost and Travel .","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"33","question":"Can a PBS be submitted when there is a PBS RRH mismatch?","answer":"No, the budget needs to be marked as cannot be submitted.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"34","question":"If a PBS version is not approved in system , will the revenue get recognised?","answer":"No, PBS needs to be in approved ststus in system before every month end system freeze.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"35","question":"For IBPO and ILO participating units  , PBS revenue share needs to be submtted against which code?","answer":"For Each ILO and IBPO, there sparate codes for allocation and revenue share transfer. Therefore the code for revenue share transfer should be used.","cat":"PBS","subcat":"Revenue Share","provider":"Bhaskar"}
+,
+{"sno":"36","question":"what will be the impact if incorrect roles are selected in PBS ?","answer":"It will impact the project cost and Margin.","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"37","question":"Where there is a PBS RRH Mismatch?","answer":"When Milestones are nether billed nor rescheduled in Alcon for a specific month.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"38","question":"Can DM access be delegated in PBS like PM access?","answer":"Yes, but it should be avoided as much as possible","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"39","question":"Who all approve PBS besides DM?","answer":"SPM and GPM","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"40","question":"Can PM withdraw the PBS which is in submitted status?","answer":"Yes, PM can withdraw the same if DM is unable to reject it.","cat":"PBS","subcat":"Delegation","provider":"Bhaskar"}
+,
+{"sno":"41","question":"Actual revenue in PBS is appearing as zero even though billing\\conformations had happened. Why?","answer":"If the Billing\\conformations have been done after the book closure of a month _the same will flow along with actuals for next month","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"42","question":"Where can I get the breakup of Actual effort\\billing?","answer":"The hyperlinks of each month under the actuals section for effort and billing will give the break up details","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"43","question":"Actuals has been posted for the previous month but billing appearing as zero_why?","answer":"For the project there is no billing done in the for the previous months hence it is appearing as zero. -If the billing done after book closer of actuals posted month then it will appear in the current month actual.You can verify the billing details with Finpulse report","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"44","question":"How to see the Effort/Travel/Other Costs break up details for the particular month?","answer":"Goto the respective Effort/Travel/Other Cost Tab - Click on hyperlink \"Preview cost\" - Click on hyperlink for the required month","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"45","question":"When is actual posted in PBS?","answer":"Generally at around 14-15 of a month actual data is posted in pbs for the last month.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"46","question":"Can the edit access to a budget exist with more than one person?","answer":"No, at any given point of time only one person will have write access to budget.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"47","question":"Can a delegated PM\\DM\\PUHead of the project delegate access to another person?","answer":"No. Delegated PM\\DM\\PUHead cannot delegate access again to another person.","cat":"PBS","subcat":"Delegation","provider":"Bhaskar"}
+,
+{"sno":"48","question":"System is giving me an error- Effort not budgeted for entire duration of the project_ when I try to submit.What do I do?","answer":"Effort Budgeting should be done for complete project duaration. If you have no resources working for any future month enter 0.01 for any combination and submit.Else get the project pre closed in OMS","cat":"PBS","subcat":"Person Effort","provider":"Bhaskar"}
+,
+{"sno":"49","question":"When PBS is submitted it's not going to DM but going to another person. Why?","answer":"Possible reasons could be : - Write access is delegated to another person.Hence the other person alone can approve - the other person  is set as SPM/GPM of the project in OMS. Hence will be able to approve budgets along with actual DM in certain cases -Read What is the role of SPM/GPM in budget approval?","cat":"PBS","subcat":"Delegation","provider":"Bhaskar"}
+,
+{"sno":"50","question":"I am DM for a project but I don\\92t see \\91approve\\92 button on approval page, instead I only see \\91forward\\92 button?","answer":"The project has negative operating margin so only the PU-Head is authorized to approve the budget.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"51","question":"What happens if a PM does not submits budget within the published timelines?","answer":"If a PM fails to submit budget within the timelines then  ALCON for that project will get locked meaning by no allocation or travel can happen on that project till the budget is submitted.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"52","question":"What is the role of SPM/GPM in budget approval?","answer":"In case the total project value is less than 1 Mn USD and operating margin is greater than 30% the budget can be approved by either of SPM/GPM or DM. It will appear in inbox of all the three. In rest of the cases - SPM or GPM can only add their remarks or reject the budget but cannot approve it - only DM can approve the budget.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"53","question":"PBS Stands for ?","answer":"Project Budgeting System","cat":"PBS","subcat":"Revenue Share","provider":"Bhaskar"}
+,
+{"sno":"54","question":"On what situations revenue share in PBS needs to be resubmitted?","answer":"Where there is a change in project value, when there is a preclosure of the project or participating unit, whenever there is effort rampdown in any of the units.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"55","question":"Can Milestones be viewd in PBS?","answer":"Yes, it can be accessbale in the revenue share tab where there is a LOE Milestone schedule link.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"56","question":"Can role wise rate card can be viewed in PBS?","answer":"Yes, in LOE rate card link under person effort tab.","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"57","question":"Can we do a manual  PBS recast  after the project end is over?","answer":"No","cat":"PBS","subcat":"PBS","provider":"Bhaskar"}
+,
+{"sno":"58","question":"what is DPS?","answer":"DPS stands for Deal Pricing system & it is profit analysis tool","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"59","question":"Is DPS mandatory for all new project codes","answer":"Yes. It is mandatory as it will give better visibility on project profit to the management","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"60","question":"Can access be provided in DPS to view the deal","answer":"Yes. Opportunity owner & Proposal Anchor will have default access & they can delegate Deal Pricing Anchor access for creating DPS to any Infoscion by making him Deal Pricing Anchor.\r\n","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"61","question":"Data required to update DPS ","answer":"Staffing plan is required to update DPS","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"62","question":"what is client year start month","answer":"Client year start month will be always Jan","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"63","question":"How does the data flow into general details tab in DPS","answer":"Data will flow from opporunity to general details tab","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"64","question":"How does the data flow to Core attributes section & margin summary in general details tab","answer":"The data will flow post entering effort/rate details in the DPS","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"65","question":"Can we create versions for the DPS","answer":"Yes. Latest approved version details will flow into opportunity post clicking on Save & accept","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"66","question":"Can we revise the DPS post opportunity approval","answer":"Yes","cat":"DPS","subcat":"Revise DPS","provider":"Sandhya"}
+,
+{"sno":"67","question":"Once proposal is generated. Can we revise the DPS","answer":"Yes","cat":"DPS","subcat":"Revise DPS","provider":"Sandhya"}
+,
+{"sno":"68","question":"Can we revise the DPS post LOE sign-off","answer":"No","cat":"DPS","subcat":"Revise DPS","provider":"Sandhya"}
+,
+{"sno":"69","question":"Does DPS# change for every new version","answer":"Yes. DPS # will be unique for every version created","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"70","question":"should we get revised DPS approved in system","answer":"No. Post changes in revised DPS click on Save & link. The values from new DPS will flow to opportunity & an auto generated mail will go to DM's","cat":"DPS","subcat":"Revise DPS","provider":"Sandhya"}
+,
+{"sno":"71","question":"Can we set in discount while updating DPS","answer":"Yes. Discount %age can be updated in general details tab in DPS","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"72","question":"Where is MCS effort data entered","answer":"Consulting tab","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"73","question":"Where is Non MCS effort data entered","answer":"Effort tab","cat":"DPS","subcat":"Effort","provider":"Sandhya"}
+,
+{"sno":"74","question":"Do we find milestone tab for T&M opportunity","answer":"No. Milestone tab is found only for FP opportunities","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"75","question":"what should be the milestone dates","answer":"milestone dates should be within the project life","cat":"DPS","subcat":"Milestone","provider":"Sandhya"}
+,
+{"sno":"76","question":"Can we create zero value DPS","answer":"Yes. The efforts are supposed to be marked as Non Billable for zero value DPS","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"77","question":"What should be the total milestone value","answer":"It will be the total project value/deal value","cat":"DPS","subcat":"Milestone","provider":"Sandhya"}
+,
+{"sno":"78","question":"Can we change the rates in T&M opportunity to match the deal value","answer":"No. Billable rate should not be changed in case of T&M opportunities","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"79","question":"Can we change the rates in FP opportunity to match the deal value","answer":"Yes. We can recalculate the rate in milestone tab to match for the total project value","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"80","question":"where do I find the project performance data","answer":"Go to margin tab","cat":"DPS","subcat":"Margins","provider":"Sandhya"}
+,
+{"sno":"81","question":"Can we see the Onsite & offshore performance data separately in DPS","answer":"Yes","cat":"DPS","subcat":"Margins","provider":"Sandhya"}
+,
+{"sno":"82","question":"Can we see PU wise margins separately","answer":"Yes. Please go to margin tab in DPS","cat":"DPS","subcat":"Margins","provider":"Sandhya"}
+,
+{"sno":"83","question":"How do I make the values flow into DPS from Opportunity","answer":"Click on \" Save & accept \" after updating all details in DPS","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"84","question":"Do we find Save & link tab when the opportunity is pending for approval","answer":"No. We can recall the opportunity & create new version of the DPS if there is any changes","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"85","question":"Can we include expense details while creating the DPS","answer":"Yes. Expenses will be captured at %age level. ","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"86","question":"Do we have provision in DPS to mark the expenses as Billable/Not Billable to customer","answer":"Yes","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"87","question":"How do we update when the expenses are not billable to customer","answer":"%age expenses to be enter in OOPE cost","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"88","question":"How do we update when the expenses are  billable to customer","answer":"%age expenses to be enter in OOPE cost & reimburseable expenses","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"89","question":"How do I calculate the %age for expenses for a consultant","answer":" (Total expenses/Total effort revenue of the consultant * 100) will give the %age","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"90","question":"What is the revenue type to be selected while updating efforts","answer":"Onsite / Offshore based on the work location as per staffing","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"91","question":"How is the efforts updated in DPS","answer":"Efforts is updated based on person months","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"92","question":"How do we calculate person months to enter in DPS","answer":"Billable hrs against the code/Total Billable hrs for that particular month will give person months","cat":"DPS","subcat":"Consulting","provider":"Sandhya"}
+,
+{"sno":"93","question":"Where do I get the milestone description details to update in DPS","answer":"Milestone details will be mentioned in the SOW & the same to be updated in DPS","cat":"DPS","subcat":"Milestone","provider":"Sandhya"}
+,
+{"sno":"94","question":"where do I get the summary in DPS for MCS","answer":"Consulting summary tab in DPS","cat":"DPS","subcat":"Consulting Summary","provider":"Sandhya"}
+,
+{"sno":"95","question":"where do I get the summary in DPS for Non MCS","answer":"Effort summary tab in DPS","cat":"DPS","subcat":"Effort summary","provider":"Sandhya"}
+,
+{"sno":"96","question":"Are we suppose to budget travel cost in DPS","answer":"Yes. All international & domestic travels to be budgeted in DPS","cat":"DPS","subcat":"Travel","provider":"Sandhya"}
+,
+{"sno":"97","question":"Will there be any change in project value post marking the expenses as Billable in DPS","answer":"Yes. Project value will increase","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"98","question":"Will there be any change in milestone value post marking the expenses as Billable in DPS","answer":"No. Please click on reimburseable OOPE so that milestone value do not change","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"99","question":"Will there be any change in project value post marking the expenses as Not Billable in DPS","answer":"No. Project value will not increase in DPS","cat":"DPS","subcat":"General details","provider":"Sandhya"}
+,
+{"sno":"100","question":"who can approve the deal","answer":"DM of the project can approve the deal in system","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"101","question":"What is IPM+ ","answer":"IPM+ stands for Integrated Project management","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"102","question":"what is the purpose of IPM+","answer":"IPM+ is the project management tool for planning and tracking. It is a mandatory process as per Pride to create project type in IPM+. Only then senior management will know what type of project it is (development or maintenance or staff augmentation etc). ","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"103","question":"who can access the application","answer":"PM , DM , Project team members , process owners , SQA's & system administrators","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"104","question":"who is the owner of IPM+","answer":"It is owned by Infosys quality team ","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"105","question":"where do I see the pending action items for project code creation","answer":"Go to Open items tab","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"106","question":"who will create the project code in IPM+","answer":"PM","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"107","question":"who will be the reviewer","answer":"SQA","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"108","question":"who will approve the code in IPM+","answer":"DM","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"109","question":"Master code will be created in IPM+","answer":"Yes","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"110","question":"Child code will be merged / created in IPM+","answer":"If the child project code follow the same process type as of master then will merge otherwise will create a new code","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"111","question":"where do I see the pending codes for approval","answer":"Please go to IPM+ -> Inbox for pending codes","cat":"IPM+","subcat":"Inbox","provider":"Sandhya"}
+,
+{"sno":"112","question":"How do I approve the project code in IPM+","answer":"Please go to IPM+ -> Inbox -> select project code & then click on route","cat":"IPM+","subcat":"Inbox","provider":"Sandhya"}
+,
+{"sno":"113","question":"Steps involved in IPM+","answer":"Project plan has to be submitted , then reviewed by SQA & approved by DM","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"114","question":"What is BRS?","answer":"BRS is a Bill Register System to track & facilitate processing from Procurement to Payment ","cat":"BRS","subcat":"BRS","provider":"Poornima"}
+,
+{"sno":"115","question":"Who will have access to  BRS","answer":"The requestor will have to update the GRN submit the BRS for approval","cat":"BRS","subcat":"User","provider":"Poornima"}
+,
+{"sno":"116","question":"Who can approve the BRS","answer":"DM of the project can approve the same in BR system","cat":"BRS","subcat":"BRS","provider":"Poornima"}
+,
+{"sno":"117","question":"Where to apply US Visa ?","answer":"Global Immigration > AIMS","cat":"AIMS","subcat":"AIMS","provider":"Nanda"}
+,
+{"sno":"118","question":"Where to apply  Visa requests for Non US Countries ?","answer":"Global Immigration > GICS","cat":"GICS","subcat":"GICS","provider":"Nanda"}
+,
+{"sno":"119","question":"How to approve Visa request in AIMS","answer":"Global Immigration > AIMS > Budgeting > Budget Approval","cat":"AIMS","subcat":"Budgeting","provider":"Nanda"}
+,
+{"sno":"120","question":"How to approve Visa request in GICS","answer":"Global Immigration > GICS > Inbox","cat":"GICS","subcat":"Inbox","provider":"Nanda"}
+,
+{"sno":"121","question":"How to create budget slot in AIMS","answer":"Global Immigration > AIMS > Budgeting > Unit Allocator","cat":"AIMS","subcat":"Budgeting","provider":"Nanda"}
+,
+{"sno":"122","question":"What is Premium Visa request","answer":"It is used when VISA is required on Urgent basis. Need PUM approval and justification for Premium Visa requests","cat":"AIMS","subcat":"AIMS","provider":"Nanda"}
+,
+{"sno":"123","question":"What to do incase of insufficient Budget for VISA","answer":"Send a mail to Finance (Raksha_Agarwal) with the screen shot for budget release","cat":"AIMS","subcat":"AIMS","provider":"Nanda"}
+,
+{"sno":"124","question":"When will VISA request will be approved.","answer":"Request has to reach UPAM inbox, then it will be approved","cat":"GICS","subcat":"GICS","provider":"Nanda"}
+,
+{"sno":"125","question":"How to create budget slot in GICS","answer":"Global Immigration > GICS > Budget","cat":"GICS","subcat":"Budget","provider":"Nanda"}
+,
+{"sno":"126","question":"What code to be used for H1 and L1 Visa requests ?","answer":"Production Code","cat":"AIMS","subcat":"AIMS","provider":"Nanda"}
+,
+{"sno":"127","question":"Whose approval is required to use Non Production Code","answer":"Delivery Head","cat":"AIMS","subcat":"AIMS","provider":"Nanda"}
+,
+{"sno":"128","question":"What code to be used for Business Visa Procesing","answer":"Overhead Code and approval from DM or Partner is Mandate.","cat":"AIMS","subcat":"AIMS","provider":"Nanda"}
+,
+{"sno":"129","question":"Which project code can be used for non billable travel","answer":"Below JL 6 will be training code and JL 7 and above will be on OH code","cat":"Alcon","subcat":" Allocation","provider":"Nanda"}
+,
+{"sno":"130","question":"When can holiday and leave allocation be done","answer":"Holiday - ***FLHUS Leave - ***PDLUS  (*** stands for respective PU), these have to be applied and approved in GLS before allocation in system for the current and future month","cat":"Alcon","subcat":" Allocation","provider":"Nanda"}
+,
+{"sno":"131","question":"Can allocation be done for previous month","answer":"Not possible, application will be frozen","cat":"Alcon","subcat":" Allocation","provider":"Nanda"}
+,
+{"sno":"132","question":"Can consultant be allocated to onsite and offshore location for the same duration","answer":"Not possible, should be either on one location","cat":"Alcon ","subcat":" Allocation","provider":"Nanda"}
+,
+{"sno":"133","question":"Can STP resource be allocated to SEZ code and viceversa","answer":"Not possible until there is a transfer","cat":"Alcon ","subcat":" Allocation","provider":"Nanda"}
+,
+{"sno":"134","question":"Can allocation be modified post initiating confirmation","answer":"Not possible incase of T&M","cat":"Alcon ","subcat":" Allocation","provider":"Nanda"}
+,
+{"sno":"135","question":"How to approve/forward confirmation","answer":"Alcon > Inbox > Confirmation > Forward to FA","cat":"Alcon ","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"136","question":"Who is the FA to forward the confirmation ","answer":"Any FA available in the drop down","cat":"Alcon ","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"137","question":"Will the confirmation be forwarded to FA post systems Freeze","answer":"No, DM has to wait till the systems are unfreeze then forward","cat":"Alcon ","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"138","question":"Can delegated access be provided in alcon to forward confirmation to FA","answer":"Yes, DM can delegate PL/DM/SPM/GPM access","cat":"Alcon ","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"139","question":"Can employee view their allocation in alcon","answer":"Yes, Sparsh > Webapps > Alcon > Employee Allocation","cat":"Alcon ","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"140","question":"What is CMR ?","answer":"CMR is Credit Memo Request, It will be issued to client incase of over billing","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"141","question":"How to approve the Invoice Cancellation / CMR requests ","answer":"DM has to enter remarks and forward the request to FA. Path to access the application is : Sparsh>Webapps>ALCON>Inbox> Under the header Cancellation/CMR ","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"142","question":"Can IPSMCS Employees be allocated to other unit  codes ","answer":"No, a separate child code with dev centre US for IPSMCS has to be created and allocations can be done on that code only ","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"143","question":"How to check the reports in Alcon","answer":"Alcon> Report Master > Download Required Report","cat":"Alcon","subcat":"Reports Master","provider":"Nanda"}
+,
+{"sno":"144","question":"How to allocate Zero % allocation for Fixed expense Confirmation","answer":"Alcon> Project Allocation>Select  Travel Expense category > allocate","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"145","question":"What are the details needed to allocate an emp to Project code ","answer":"Emp number, Project code, Start Date and End Date and % of allocation","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"146","question":"What is FP Confirmation","answer":"Fixed Billing to Client as per the SOW","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"147","question":"What T&M Confirmation","answer":"Billing at Actuals based on the Time spent in a respective Project","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"148","question":"What is Expense Confirmation","answer":"Emp expense spent during project duration (applicable if the expenses are billable to client)","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"149","question":"What is the maximum % of allocation can emp be allocated ?","answer":"100%","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"150","question":"What is BTP","answer":"Bill To Party, This will be entered while raising the confirmation in Alcon","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"151","question":"What is SHTP","answer":"Ship To Party, This will be entered while raising the confirmation in Alcon","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"152","question":"What is PO and where to enter PO in Confirmation","answer":"Purchase Order, for some accounts with out PO services will not be initiated and this needs to be entered while raising the confiramtion in PO filed","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"153","question":"What is BAA in T&M Confirmation","answer":"Billing at Actuals, Ex: If the avaialble hours is 160 Hrs but need to bill client 168 Hrs, extra 8 Hrs we can put in BAA and bill","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"154","question":"What is BUF in T&M Confirmation","answer":"BUF means Buffer which means not billable to Client, Incase expense are efforts are not billable to client then we need to select BUF.","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"155","question":"How to Future current month efforts to future month in Alcon","answer":"We need to select Future in Confirmation page while raising confirmation. So that these will be available for invoicing next month.","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"156","question":"How to Cancel the Invoice","answer":"Alcon>Confirmation>Cancel Invoice","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"157","question":"How to raise confirmation for previous month?","answer":"Need to get exception approval access from FA for the month which you want to raise the confirmation, then you will be able to raise the confirmation for previous month","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"158","question":"How to delegate access in alcon?","answer":"Alcon>Delegation","cat":"Alcon","subcat":"Delegation","provider":"Nanda"}
+,
+{"sno":"159","question":"What is Alcon","answer":"Allocation and Confirmaion","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"160","question":"Can we reschedule Current month Milestone confirmation to Future (FP)","answer":"Yes, Alcon>Confirmation> Reschedule","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"161","question":"Where to check all Emp allocation details","answer":"Alcon>Emp Allocation","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"162","question":"Can the allocation be deleted ?","answer":"Yes, Currnet month and future allocations can be deleted.","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"163","question":"Can the allocations be done when it is freezed.","answer":"No, we have to raise Alcon Unfreeze request to do the allocations","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"164","question":"Is it possible to view the allocations/confirmations for the closed project code","answer":"No, we need to request FA to give exceptional access to see the allocations & confirmations of the closed code","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"165","question":"How to find out the job level of the emp?","answer":"Go to emp allocation->put emp# -> click on emp#","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"166","question":"When is the billing cycle for T&M projects?","answer":"Billing cycle for T&M projects usually will be \"monthly\"","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"167","question":"When is the billing cycle for FP projects?","answer":"FP projects billing will be based on milestones dates which will be mentioned in SOW","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"168","question":"Is client approval required for billing of milestones for FP projects?","answer":"Yes, client is approval is mandatory and we need to upload client email approval while saving FP confirmation","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"169","question":"What is activity description in allocation?","answer":"Allocation activity description is role to be selected for the emp for T&M projects or location (offshore/onsite) to be selected for FP projects","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"170","question":"What is activity rate in allocation?","answer":"Allocation activity rate is the rate to be billed at for that resource for T&M projects (Rate is not applicable for FP projects)","cat":"Alcon","subcat":"Allocation","provider":"Nanda"}
+,
+{"sno":"171","question":"Does invoice cancellation is required for change in PO","answer":"No - In case ofinvoice is more than 60 days. Yes - for newly generated invoice","cat":"Alcon","subcat":"Confirmation","provider":"Nanda"}
+,
+{"sno":"172","question":"In which system do we create the Project Codes & LOE 's","answer":"Project codes are set up in OMS","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"173","question":"How to add Fixed expenses on a project","answer":"We need DM mail approval and raise an AHD to get the fixed expense added","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"174","question":"The requirements to add a country to the project","answer":"The SOW should have the country mentioned and we can then add the country if the LOE status is Sent Offshore","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"175","question":"Can we change the DPS on a Project code","answer":"We can revise the Deal Pricing until the LOE gets signed off","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"176","question":"Can we change the PM on a Project Code","answer":"The existing PM can change the PM on the project","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"177","question":"Can we change the DM on a Project Code","answer":"We have to raise an AHD with the current DM 's mail approval to change it in system","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"178","question":"Can a PM change the DM on a Project Code","answer":"The DM change can only be done by the Finance team","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"179","question":"How to create a child code for different PU on a Master Project","answer":"Master project PM has to login as PM in OMS. Go to Financial details tab, click on create CR and enter the details required","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"180","question":"What system related details are required to create a Child Code","answer":"Along with the document we need PU, DU, PM and DM and specific naming convention if any","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"181","question":"How to prevent R@R on a project","answer":"The signed SOW or CR has to be uploaded in OMS, in financial details tab andFA will then sign off the LOE","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"182","question":"How to get the LOE signed off for start and end date mismtach from SOW","answer":"We have to upload the DM mail approval in financial details tab and forward this to FA","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"183","question":"Can a PM add additional cities for a project","answer":"Yes, PM has to click on add new country tab in OMS and then add cities","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"184","question":"Code creation with start date for previous month","answer":"Not Possible, past month project code cannot be created","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"185","question":"Can project code be created after LOE cutoff","answer":"Not Possible, system will be frozen for backdated LOE","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"186","question":"Code creation for SEZ resources","answer":"Separate master code is required for each SEZ location","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"187","question":"Can an FP project code be extended with 0 value","answer":"Yes, 0 value extension can be done with signed CR and DM approval","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"188","question":"Positive CR with out change in end date","answer":"Yes, CR along with staffing plan is required","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"189","question":"Can project code be preclosed","answer":"Yes, with a negative CR along with UH & DM approval","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"190","question":"Can project value be reduced after LOE signoff","answer":"Yes, with a negative CR along with DM & DH approval","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"191","question":"What documents are required to add additional countries to the project on FP Project","answer":"Location should be mentioned in SOW otherwise client mail approval along with a CR for the same.","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"192","question":"What documents are required to add additional role activities to the project on TM Project","answer":"Activity should be specifically mentioned against each country in the staffing details on SOW, OR a CR will be required for adding new activities if any","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"193","question":"Who have access to OMS","answer":"PM, DM, SPM, GPM and CSG","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"194","question":"Can a child code be pre-closed without the Master code end date changed ","answer":"Yes, unless we don\\92t have any active allcoations on the child code with DM approval mail ","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"195","question":"Can a child code be created during the mid term of the project","answer":"Yes, child codes can be created anytime during the whole term of the master project","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"196","question":"Who has access to change the SPM and GPM","answer":"PM can add or modify the SPM and GPM in system without any approvals","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"197","question":"If BTP/SHTP be modified on a project","answer":"The required BTP/SHTP has to be updated in SOW. Else, a CR is required to change ","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"198","question":"T&M code extension","answer":"CSG to initiate LOE version for extending project code","cat":"OMS","subcat":"OMS","provider":"Kirthi"}
+,
+{"sno":"199","question":"Can production code be created/extended when once OMS is taken offline for Q-end activities","answer":"No","cat":"OMS","subcat":"OMS","provider":"Sandhya"}
+,
+{"sno":"200","question":"Can a Non-Production code be created/extended when once OMS is taken offline for Q-end activities","answer":"Yes","cat":"OMS","subcat":"OMS","provider":"Sandhya"}
+,
+{"sno":"201","question":"Can project type be changed  post code creation","answer":"No. Old code to be scrapped & new code to be created","cat":"OMS","subcat":"OMS","provider":"Sandhya"}
+,
+{"sno":"202","question":"Does LOE # change for every new DPS version created ","answer":"No. LOE # will be same but new verion will be created for project code extension","cat":"OMS","subcat":"OMS","provider":"Sandhya"}
+,
+{"sno":"203","question":"Can we change the currency on a project code after LOE signoff","answer":"No. Currency cannot be changed after code creation & new code to be created","cat":"OMS","subcat":"OMS","provider":"Sandhya"}
+,
+{"sno":"204","question":"Which report can give a project 's recognised revenue data ","answer":"Got to the sheet Productivity Summary of Finpulse Report and filter using the Project Code and refer to the row that shows Total Revenue under the column YTD to get this data","cat":"Finpulse ","subcat":"Finpulse ","provider":"Kirthi"}
+,
+{"sno":"205","question":"How can we identify the cost incurred on a project ","answer":"Got to the sheet Productivity Summary of Finpulse Report and filter using the Project Code and refer to the row that shows Total Cost under the column YTD to get this data","cat":"Finpulse ","subcat":"Finpulse ","provider":"Kirthi"}
+,
+{"sno":"206","question":"How can we identify subcon cost or any other cost on the project which is not budgeted","answer":"The Actual expense report will give us the data ","cat":"Finpulse ","subcat":"Finpulse ","provider":"Kirthi"}
+,
+{"sno":"207","question":"What are the different kind of Finpulse reports ","answer":"Finpulse has two reports, Revenue Productivity Report and Actual Expense Report","cat":"Finpulse ","subcat":"Finpulse ","provider":"Kirthi"}
+,
+{"sno":"208","question":"Will DM have access to Finpulse ","answer":"Yes, the path is : Webapps>Finpulse>","cat":"Finpulse ","subcat":"Finpulse ","provider":"Kirthi"}
+,
+{"sno":"209","question":"What are the different kinds of Analysis can be made using Finpulse ","answer":"Variance in Project Margin, Revenue recognition, Effort and Revenue comparison ","cat":"Finpulse ","subcat":"Finpulse ","provider":"Kirthi"}
+,
+{"sno":"210","question":"Can travel allocations happen for past months","answer":"Yes","cat":"Alcon","subcat":"Allocation","provider":"Sandhya"}
+,
+{"sno":"211","question":"Can we do overhead code allocations for employees less than JL6 ","answer":"No. Alcon will not support & it will go for exception approval post which allocations can be completed","cat":"Alcon","subcat":"Allocation","provider":"Sandhya"}
+,
+{"sno":"212","question":"who will be the opportunity owner","answer":"Person who is responsible for opportunity creation","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"213","question":"How do I go to CIARA to create opportunity","answer":"Goto sparsh ->Webapps ->CIARA","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"214","question":"who will be the proposal anchor","answer":"person who is responsible for proposal creation. Only PA can link the deal with proposal","cat":"CIARA","subcat":"Proposal","provider":"Sandhya"}
+,
+{"sno":"215","question":"Levels of opportunity approval","answer":"Internal review , FA review , FM review & proposal approval","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"216","question":"who can create opportunity in CIARA","answer":"CSG will have access for opportunity creation","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"217","question":"Can we delegate access in opportunity post opportunity creation to take it forward","answer":"Yes. Bid manager access can be delegated in CIARA to take it forward","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"218","question":"who can approve the opportunity in CIARA","answer":"DM of the project can approve the opportunity in CIARA","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"219","question":"How do I approve the opportunity in CIARA","answer":"Goto sparsh -> Webapps -> CIARA -> type opp # -> goto proposal page for approval","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"220","question":"The project value is 100K USD. How do I enter the value in CIARA","answer":"Please enter only 100. Application will suffix 000's in system.","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"221","question":"Is Estimation details mandatory to be updated in system","answer":"Yes","cat":"CIARA","subcat":"Estimation","provider":"Sandhya"}
+,
+{"sno":"222","question":"Can I create an opportunity without an SOW","answer":"No. SOW is mandatory as it is supposed to be uploaded in proposal page","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"223","question":"Can we delegate acccess in opportunity for multiple people","answer":"No. Bid manager access can be delegated to only one person.","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"224","question":"I have CSG access. Can I view the opportunity in CIARA","answer":"Yes. You can view the details but application will not allow you to make any changes","cat":"CIARA","subcat":"Opportunity","provider":"Sandhya"}
+,
+{"sno":"225","question":"Can we change the currency after project code creation","answer":"Yes. Revise the deal for change in currency","cat":"DPS","subcat":"DPS","provider":"Sandhya"}
+,
+{"sno":"226","question":"Can revenue share be updated in system if the development centre is different","answer":"No. Development centre should be same for both master & child codes otherwise system will not allow to update revenue share in system","cat":"PBS","subcat":"Revenue share","provider":"Sandhya"}
+,
+{"sno":"227","question":"Can we check if the allocated & budgeted efforts is correct or if there is any changes in PBS","answer":"Yes. We can check  the total of allocated efforts ( including all child codes ) is same as per efforts budgeted in PBS","cat":"PBS","subcat":"Effort details","provider":"Sandhya"}
+,
+{"sno":"228","question":"Rates used to create SOW ","answer":"The rates used should be inline with MSA Rate card, if we use other rates DAG approval will be needed","cat":"DPS","subcat":"Consulting tab for MCS","provider":"Sandhya"}
+,
+{"sno":"229","question":"What is IPM+ ","answer":"IPM+ stands for Integrated Project management","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"230","question":"what is the purpose of IPM+","answer":"IPM+ is the project management tool for planning and tracking. It is a mandatory process as per Pride to create project type in IPM+. Only then senior management will know what type of project it is (development or maintenance or staff augmentation etc). ","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"231","question":"who can access the application","answer":"PM , DM , Project team members , process owners , SQA's & system administrators","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"232","question":"who is the owner of IPM+","answer":"It is owned by Infosys quality team ","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"233","question":"where do I see the pending action items for project code creation","answer":"Go to Open items tab","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"234","question":"who will create the project code in IPM+","answer":"PM","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"235","question":"who will be the reviewer","answer":"SQA","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"236","question":"who will approve the code in IPM+","answer":"DM","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"237","question":"Master code will be created in IPM+","answer":"Yes","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"238","question":"Child code will be merged / created in IPM+","answer":"If the child project code follow the same process type as of master then will merge otherwise will create a new code","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"239","question":"where do I see the pending codes for approval","answer":"Please go to IPM+ -> Inbox for pending codes","cat":"IPM+","subcat":"Inbox","provider":"Sandhya"}
+,
+{"sno":"240","question":"How do I approve the project code in IPM+","answer":"Please go to IPM+ -> Inbox -> select project code & then click on route","cat":"IPM+","subcat":"Inbox","provider":"Sandhya"}
+,
+{"sno":"241","question":"Steps involved in IPM+","answer":"Project plan has to be submitted , then reviewed by SQA & approved by DM","cat":"IPM+","subcat":"IPM+","provider":"Sandhya"}
+,
+{"sno":"242","question":"Where can I claim for expense reimbusement of official expenses","answer":"claims system","cat":"claims ","subcat":"claims","provider":"Sandhya"}
+,
+{"sno":"243","question":"How do I go to claims system","answer":"Goto Webapps-> claims sytem","cat":"claims ","subcat":"claims","provider":"Sandhya"}
+,
+{"sno":"244","question":"Can I go ahead & submit claims for non travel ","answer":"Yes. Claims can be raised in system for reimbursement of all official expenses ( travel & non travel )","cat":"claims ","subcat":"submission","provider":"Sandhya"}
+,
+{"sno":"245","question":"Can we use excel upload format to submit claims when the claims count is more","answer":"Yes. Excel upload can be used by downloading the te,plate available in claims system","cat":"claims ","subcat":"submission","provider":"Sandhya"}
+,
+{"sno":"246","question":"what am I supposed to do after submitting claims in system","answer":"Please take the print of control sheet & attatch the bills & hand it over to claims desk for processing","cat":"claims ","subcat":"submission","provider":"Sandhya"}
+,
+{"sno":"247","question":"Who will approve the claims","answer":"Project code DM will approve the claims","cat":"claims ","subcat":"approval","provider":"Sandhya"}
+,
+{"sno":"248","question":"who will be verifying the claims","answer":"claims team will verify the claims & settle the claims","cat":"claims ","subcat":"verification","provider":"Sandhya"}
+,
+{"sno":"249","question":"what is the validity of the project code to submit claims in claims system when once the code is closed","answer":"The project code will be valid in claims system for 30 days even though the project code is closed","cat":"claims ","subcat":"validity","provider":"Sandhya"}
+,
+{"sno":"250","question":"what is the code to be used for submission of claims","answer":"Expenses are supposed to be submitted against the project code for which expenses are incurred","cat":"claims ","subcat":"submission","provider":"Sandhya"}
+,
+{"sno":"251","question":"Can I review the claims which I have submitted","answer":"Yes. Goto claims system ->Inbox-> select claim # to view","cat":"claims ","subcat":"submission","provider":"Sandhya"}
+,
+{"sno":"252","question":"How to re-submit a claim?","answer":"You can re-submit a claim withdrawn by you, or a claim that is re-directed back to you. Select the claims from your Inbox\\E0Claim Inbox and re-submit.","cat":"claims ","subcat":"Re-submit","provider":"Sandhya"}
+,
+{"sno":"253","question":"How to cancel claims","answer":"select the claim# in claims system & click on cancel","cat":"claims ","subcat":"cancellation","provider":"Sandhya"}
+,
+{"sno":"254","question":"How to cancel claims after settlement","answer":"No. Cancellation of claims is not possible post settlement","cat":"claims ","subcat":"cancellation","provider":"Sandhya"}
+,
+{"sno":"255","question":"Can we raise exception claims for unapproved claims","answer":"Yes. Exception for claims can be raised.","cat":"claims ","subcat":"exception","provider":"Sandhya"}
+,
+{"sno":"256","question":"Do we require any approvals for exception claims","answer":"Yes. DM should approve for exception claims","cat":"claims ","subcat":"exception","provider":"Sandhya"}
+,
+{"sno":"257","question":"How to raise exception claims","answer":"Once your claim is settled you can raise an exception claim for the amounts that were not approved by the Claims Desk. Exception can be raised per claim transaction. ","cat":"claims ","subcat":"exception","provider":"Sandhya"}
+,
+{"sno":"258","question":"How do I track my claim","answer":"Go to Inbox -> claim # . You will be able to see the status of that claims","cat":"claims ","subcat":"tracking","provider":"Sandhya"}
+,
+{"sno":"259","question":"When do we have to mark the expenses as client Billable / customer recoverable?","answer":"Claims have to marked as  Billable / recoverable only if it is mentioned in SOW that expenses will be charged separately to customer on top of project value","cat":"claims ","subcat":"Expense recovery","provider":"Sandhya"}
+,
+{"sno":"260","question":"When do we have to mark the expenses as client not Billable / customer not recoverable?","answer":"Expenses to be marked as customer not billable / not recoverable when expenses is already included in the total project value / billable rate. It will be mentioned in the sow","cat":"claims ","subcat":"Expense recovery","provider":"Sandhya"}
+,
+{"sno":"261","question":"I am supposed to travel to client location but my project code is yet to created. How do I submit the travel request","answer":"Please take DM approval to allocate you against any other active code for that particular account to submit travel request","cat":"Travel","subcat":"Travel","provider":""}
+,
+{"sno":"262","question":"I was allocated to the code for travel purpose. Can I go ahead & submit the claims against that code","answer":"No. Please wait untill the project code creation is complete to submit expenses","cat":"claims ","subcat":"Travel","provider":"Sandhya"}
+,
+{"sno":"263","question":"Can I travel on OH code instead of project code as my project code is yet to be created","answer":"No. Production travel should be submitted on project code only","cat":"Travel","subcat":"Travel","provider":""}
+,
+{"sno":"264","question":"What should I do when I get the below error screenshot when I am trying to submit the travel request for approval?                                                                        The budget Utilization for PU **MCS has exceeded 100%. Submit this request to eric_rich for approval.","answer":"Please submit the travel request & drop a note to UPAM ( Ramesh_BV). He will help to get the travel request approved","cat":"Travel","subcat":"travel","provider":""}
+,
+{"sno":"265","question":"what is the minimum allocation %age required in system for raising travel request / for submission of claims","answer":"1% allocation","cat":"claims ","subcat":"Travel","provider":"Sandhya"}
+,
+{"sno":"266","question":"Infosys has booked the tickets for your travel. Can I go ahead & submit the claims.","answer":"Yes. Except travel other expenses can be submitted for reimbursement","cat":"claims ","subcat":"travel","provider":"Sandhya"}
+,
+{"sno":"267","question":"Can I go ahead & submit claims for self booked travel","answer":"Yes. Please submit claims against valid project code ","cat":"claims ","subcat":"travel","provider":"Sandhya"}
+,
+{"sno":"268","question":"My travel is booked by Infosys but the travel is client billable. How do we raise the invoice for travel","answer":"Please share soft copy of air ticket to your project code PC to raise invoice","cat":"claims ","subcat":"Travel","provider":"Sandhya"}
+,
+{"sno":"269","question":"What is E-procurement? ","answer":"E-procurement is a web application, where Purchase requests/Goods Receipt are created. ","cat":"E-Procurement","subcat":"E-Procurement","provider":"Poornima"}
+,
+{"sno":"270","question":"How to go to  E-procurement","answer":"Sparsh->Webapps>Procurement System(e-procurement)","cat":"E-Procurement","subcat":"E-Procurement","provider":"Poornima"}
+,
+{"sno":"271","question":"Is there a vendor data base or will I have to look out for one? \r\n","answer":"Purchase team have a large vendor database and  can we can contact them for the same","cat":"E-Procurement","subcat":"Sources/Suppliers","provider":"Poornima"}
+,
+{"sno":"272","question":"Is the vendor code mandatory for Purchase Contract?","answer":"Yes, the vendor code is mandatory for Purchase Contract","cat":"E-Procurement","subcat":"Sources/Suppliers","provider":"Poornima"}
+,
+{"sno":"273","question":"How do I get E-procurement access? ","answer":"Please log a serve central request to IS-SAP-P2P for PR(Purchase Request), MIGO (Goods Receipt Note) access along with approval from Aparna Biradar","cat":"E-Procurement","subcat":"E-Procurement","provider":"Poornima"}
+,
+{"sno":"274","question":"After I request the PR, my work is done. Is that all? ","answer":"PR has to be accompanied by documents like a quotation from the vendor, invoice copy, PR\\92s without proper specification are likely to be rejected. The department can also ask for alternate quotes from different vendors or re-negotiate with the vendor","cat":"E-Procurement","subcat":"E-Procurement","provider":"Poornima"}
+,
+{"sno":"275","question":"Do we have to go through the listed vendors only? Can we propose a new vendor if we are convinced of the quality of a vendor or if we know a suitable vendor? ","answer":"The list that purchase team provides, includes empanelled vendors, and dealing with them reduces the time taken for empanelling and worries of a successful transaction.  However purchase team are open to the addition of new vendors if absolutely required, based on the merit of the vendor and the product / service provided.","cat":"ECMS","subcat":"Purchase","provider":"Poornima"}
+,
+{"sno":"276","question":"What do you mean by an empanelled vendor? ","answer":"There is a process for identifying a vendor who can do business with Infosys.  Past history is checked / verified and suitability to Infosys culture and for doing business with Infosys scrutinized.  We also check how long the prospective vendor has been in business, turnover of the organization, their clientele and conduct a verification with their large customers on their experience before issuing the prospective vendor with a vendor code. This process is called as vendor empanelment.","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"277","question":"What is a PO copy","answer":"The Purchase order is a legal document which binds Infosys to pay the respective vendor once the product or the service is obtained","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"278","question":"What am I supposed to do with the PO copy ?","answer":"A copy is provided to check if the material/service, and also the volumes and delivery dates that was requested are correctly represented in the document","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"279","question":"What is ECMS?","answer":"ECMS is a web application, where PO requests, effort approval/Goods Receipt are created. ","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"280","question":"How to go to ECMS","answer":"Sparsh->Webapps>ECMS v2","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"281","question":"ECMS - Abbreviation","answer":"External Consultant Management System","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"282","question":"What is Task Order? ","answer":"Task Order is document that contains information about the services provided by subcontractor, location of services etc.","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"283","question":"Who Signs the Task Order? ","answer":"The task order is signed between the DM and the Vendor. All services that are within scope of the agreement are clearly pointed out (activities within scope, roles and responsibilities etc.)","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"284","question":"Is there any Standard template for Task Order?","answer":"Yes, we have standard template, PC can provide the same","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"285","question":"Who will create Subcontractor ID?","answer":"ECM HR will create Subcontractor ID.","cat":"ECMS","subcat":"ECMCS, HR","provider":"Poornima"}
+,
+{"sno":"286","question":"What is the difference between Project Margin and Request Margin?","answer":"Project Margin is as per PBS approved version as on that date. Request Margin is Subcontractor margin.","cat":"ECMS","subcat":"ECMS","provider":"Poornima"}
+,
+{"sno":"287","question":"Is it possible to create Backdated request for past dates?","answer":"Backdated request can be created if the start date is in past and End date is in Future","cat":"ECMS","subcat":"ECMS, Request","provider":"Poornima"}
+,
+{"sno":"288","question":"What approval is required if the start date is in current Month","answer":"If the start date is in current Month then the request is redirected to Unit Head for approval.","cat":"ECMS","subcat":"ECMS, Request","provider":"Poornima"}
+,
+{"sno":"289","question":"What approval is required if the start date is in previous Month ","answer":"If the start date is in previous Month then the request is redirected to CFO for approval.","cat":"ECMS","subcat":"ECMS, Request","provider":"Poornima"}
+,
+{"sno":"290","question":"Can complete backdated request be created?","answer":"Backdated request cannot be created in ECM system if both the start and end dates of the request are in past. It should go through e-Procurement process.","cat":"ECMS","subcat":"ECMS, Request","provider":"Poornima"}
+,
+{"sno":"291","question":"I need to extend PO for a production project. How shall I proceed?   ","answer":"Please provide the extended Task Order to PC and UPAM of the project for which the subcontractor is working should log a PO Extension request in ECM system.","cat":"ECMS","subcat":"ECMS, Request","provider":"Poornima"}
+,
+{"sno":"292","question":"I need to extend PO for a Non production project. How shall I proceed?","answer":"Please provide the extended Task Order to PC and PM of the project for which the subcontractor is working should log a PO Extension request in ECM system.","cat":"ECMS","subcat":"ECMS, Request","provider":"Poornima"}
+,
+{"sno":"293","question":"What is GRN?","answer":"GRN is Goods Receipt Note, created to confirm the efforts/services and the same is sent to vendor","cat":"ECMS","subcat":"GRN","provider":"Poornima"}
+,
+{"sno":"294","question":"GRN! Is there a template or something. \r\n","answer":"No, this needs to be done in E-procurement by the requester who raised the PR in system","cat":"ECMS","subcat":"GRN","provider":"Poornima"}
+,
+{"sno":"295","question":"Will the payments be made automatically? \r\n","answer":"Provide the invoice copy, PC shall request payments team to process the invoice by raising GRN","cat":"ECMS","subcat":"GRN","provider":"Poornima"}
+,
+{"sno":"296","question":"I need to confirm the subcontractor\\92s effort. How shall I proceed?","answer":"PM of the project for which the subcontractor is working should confirm the monthly effort.","cat":"ECMS","subcat":"Effort approval","provider":"Poornima"}
+,
+{"sno":"297","question":"What are the documents required to create GRN","answer":"Approved timesheets, invoice copy from vendor is required to be sent to PC","cat":"ECMS","subcat":"GRN","provider":"Poornima"}
+,
+{"sno":"298","question":"How will I create GRN for Multiple Extension Requests for the same month?","answer":"Single GRN will be created for the multiple extensions for the same month","cat":"ECMS","subcat":"GRN","provider":"Poornima"}
+,
+{"sno":"299","question":"How to change the Efforts if Actual is greater than the Billable?","answer":"We can use \\93PO amendment\\94 functionality to do the needful.","cat":"ECMS","subcat":"Amendement","provider":"Poornima"}
+,
+{"sno":"300","question":"Who can approve the PO amendment","answer":"DM of the project can approve the same in ECM system","cat":"ECMS","subcat":"Amendement","provider":"Poornima"}
+,
+{"sno":"301","question":"Who can approve the Effort of subcon","answer":"DM of the project can approve the same in ECM system","cat":"ECMS","subcat":"Effort approval","provider":"Poornima"}
 ]
